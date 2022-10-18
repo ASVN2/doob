@@ -1,0 +1,51 @@
+$red-color: #ff3946;
+$dark-blue: #314584;
+$gray-color: #9fa4a7;
+
+.main-btn {
+  background-color: $red-color;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    color: $red-color;
+    border: 1px solid $red-color;
+    background-color: transparent;
+  }
+}
+
+.gb-red-hover {
+  transition: 0.3s;
+  &:hover {
+    background-color: $red-color !important;
+  }
+}
+
+.text-red-hover {
+  transition: 0.3s;
+  &:hover {
+    color: $red-color !important;
+  }
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+
+.red-color {
+  color: $red-color;
+}
+
+.gray-color {
+  color: $gray-color;
+}
+
+.bg-main-red {
+  background-color: $red-color;
+}

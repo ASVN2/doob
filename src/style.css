@@ -1,0 +1,231 @@
+.main-btn {
+  background-color: #ff3946;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.main-btn:hover {
+  color: #ff3946;
+  border: 1px solid #ff3946;
+  background-color: transparent;
+}
+
+.gb-red-hover {
+  transition: 0.3s;
+}
+.gb-red-hover:hover {
+  background-color: #ff3946 !important;
+}
+
+.text-red-hover {
+  transition: 0.3s;
+}
+.text-red-hover:hover {
+  color: #ff3946 !important;
+}
+
+.dark-blue {
+  color: #314584;
+}
+
+.red-color {
+  color: #ff3946;
+}
+
+.gray-color {
+  color: #9fa4a7;
+}
+
+.bg-main-red {
+  background-color: #ff3946;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav .the-btn {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s;
+}
+nav .the-btn:hover {
+  color: white !important;
+}
+nav .out-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 4px;
+  background: #ff3946;
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .the-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  transition: 0.3s;
+  background-color: transparent;
+}
+nav .the-item:hover {
+  color: white;
+  background-color: #ff3946;
+}
+nav .dropdown-menu.show {
+  border-radius: 0;
+  border-color: #ff3946;
+  transition: 0.3s;
+}
+nav .dropdown-menu.show:hover {
+  background-color: #ff3946;
+}
+
+.heading {
+  min-height: calc(100vh - 72px);
+}
+.heading .title {
+  font-size: 3rem;
+}
+.heading .info {
+  font-size: 15px;
+}
+
+.servies .box-holder {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.servies .title {
+  font-size: 2.5rem;
+}
+.servies .main-title {
+  font-size: 3rem;
+}
+.servies .info {
+  font-size: 1.3rem;
+}
+.servies .aside {
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about .main-title {
+  font-size: 3.5rem;
+}
+@media (max-width: 1000px) {
+  .about .main-title {
+    font-size: 2rem;
+  }
+}
+.about .aside {
+  z-index: -1;
+}
+
+.works {
+  overflow: hidden;
+}
+.works .main-title {
+  font-size: 3.5rem;
+}
+@media (max-width: 1000px) {
+  .works .main-title {
+    font-size: 2rem;
+  }
+}
+.works .aside-img {
+  z-index: -1;
+}
+.works .box {
+  position: relative;
+  overflow: hidden;
+}
+.works .box::before {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(49, 68, 132, 0.737254902);
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.works .box:hover::before {
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) scale(70);
+}
+.works .box::after {
+  content: "The Project";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  transition: 0.4s;
+  transition-delay: 0.3s;
+}
+.works .box:hover::after {
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.blog .box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.blog .box::before {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #ff3946;
+  border-radius: 50%;
+  transition: 0.4s;
+  z-index: -1;
+}
+.blog .box:hover::before {
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) scale(60);
+}
+.blog .box:hover {
+  color: white;
+}
+.blog .box:hover span {
+  color: rgb(208, 208, 208);
+}
+
+.contact-us .input {
+  background-color: rgba(214, 225, 232, 0.3607843137);
+  border: none;
+  resize: none;
+}
+.contact-us .input:focus {
+  outline: none;
+}
+
+.footer {
+  background-color: #314584;
+}/*# sourceMappingURL=style.css.map */
